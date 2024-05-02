@@ -238,7 +238,7 @@ function Main() {
       <WorkExp />
       <Works />
       <MainContact />
-      <p className="flex justify-center text-xs text-blue-950 lg:hidden "> Copyright © 2024  {Bio.name} All rights reserved.</p>
+      <p className="flex justify-center text-xs text-blue-950 lg:hidden bg-white py-[10px] "> Copyright © 2024  {Bio.name} All rights reserved.</p>
     </div>
   );
 }
