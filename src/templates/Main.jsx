@@ -37,7 +37,7 @@ function Main() {
               {Bio.name}
             </div>
 
-            <p className="">{Bio.fname}</p>
+            <p className="">NNNNNNN</p>
 
             <p>{Bio.lname}</p>
           </div>
@@ -54,9 +54,8 @@ function Main() {
               onClick={() => {
                 setMenu("Home");
               }}
-              className={`cursor-pointer ${
-                menu === "Home" ? "text-blue-600 " : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "Home" ? "text-blue-600 " : "text-blue-950"
+                }`}
             >
               {" "}
               About
@@ -73,9 +72,8 @@ function Main() {
               onClick={() => {
                 setMenu("skill");
               }}
-              className={`cursor-pointer ${
-                menu === "skill" ? "text-blue-600 " : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "skill" ? "text-blue-600 " : "text-blue-950"
+                }`}
             >
               {" "}
               Skills
@@ -94,9 +92,8 @@ function Main() {
               onClick={() => {
                 setMenu("About");
               }}
-              className={`cursor-pointer ${
-                menu === "About" ? "text-blue-600" : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "About" ? "text-blue-600" : "text-blue-950"
+                }`}
             >
               Experience
             </Link>
@@ -111,9 +108,8 @@ function Main() {
               onClick={() => {
                 setMenu("Portfolio");
               }}
-              className={`cursor-pointer ${
-                menu === "Portfolio" ? "text-blue-600" : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "Portfolio" ? "text-blue-600" : "text-blue-950"
+                }`}
             >
               Works
               {/* </a> */}
@@ -130,9 +126,8 @@ function Main() {
               onClick={() => {
                 setMenu("Contact");
               }}
-              className={`cursor-pointer ${
-                menu === "Contact" ? "text-blue-600" : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "Contact" ? "text-blue-600" : "text-blue-950"
+                }`}
             >
               Contact
               {/* </a> */}
@@ -150,33 +145,20 @@ function Main() {
       </div>
       {/* ----------------MOBILE VIEW-------------------------------------------------------------------------------- */}
 
-      <div className=" lg:hidden  bg-white sticky  top-0 py-[10px] z-[2] ">
-        <div className="w-[88%] max-w-[1340px] mx-auto">
-          <div className="  flex justify-between items-center text-blue-950">
-            <p className="text-xl font-bold italic">{Bio.fname}</p>
-            <div className="z-[12] " onClick={handleClick}>
-              <FaBars />
-            </div>
+      <div className="lg:hidden  bg-white sticky top-0 py-[10px] z-[2] ">
+        <div className="w-[88%] max-w-[1340px] mx-auto flex justify-between items-center text-blue-950">
+          <p className="text-xl font-bold italic">{Bio.fname}</p>
+          <div className="z-[12] " onClick={handleClick}>
+            {(menuToggle) ? < IoMdClose /> : <FaBars />}
           </div>
-          <div
-          
-              // ${menuToggle  ? (clicked ?'right-0': 'right-[-200px]'):'right-[-200px]'}`}
-
-              //  class = {`${clicked? 'hidden':'hidden'}`}
-            className={`z-[2] bg-white shadow-xl shadow-blue-400 transition-all ease-in-out duration-300 fixed top-0 w-[200px] h-[100vh]  ${
-              menuToggle ? "right-0" : "right-[-200px]"
+        </div>
+        <div
+          className={`transition-all ease-in-out duration-300  ${menuToggle ? "bg-[#00000030] fixed top-0 w-full h-full z-[2]" : ""
             }`}
-          >
-            <div
-              className="p-[30px] text-xl cursor-pointer font-extrabold"
-              onClick={handleClick}
-            >
-              < IoMdClose />
-            </div>
-            <ul
-              className="flex flex-col gap-6 justify-center items-center"
-
-            >
+        >
+          <div className={`z-[2] bg-white transition-all ease-in-out duration-300 fixed top-0 w-[200px] h-full ${menuToggle ? "right-0 shadow-xl shadow-blue-400" : "right-[-200px]"
+            }`}>
+            <ul className="flex flex-col gap-6 justify-center items-center pt-[60px]">
               <li>
                 <Link
                   activeClass="active"

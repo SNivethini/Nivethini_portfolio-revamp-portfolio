@@ -53,7 +53,7 @@ function Works() {
             </p>
           </motion.div>
 
-          <div className="Slider-container">
+          <div className="Slider-container overflow-hidden">
             <Slider {...settings} className="">
               <div className=" ">
                 <span className="">REACT & TAILWIND</span>
