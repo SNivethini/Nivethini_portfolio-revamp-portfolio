@@ -37,7 +37,7 @@ function Main() {
               {Bio.name}
             </div>
 
-            <p className="">{Bio.fname}</p>
+            <p className="">NNNNNNN</p>
 
             <p>{Bio.lname}</p>
           </div>
@@ -154,7 +154,7 @@ function Main() {
         <div className="w-[88%] max-w-[1340px] mx-auto">
           <div className="  flex justify-between items-center text-blue-950">
             <p className="text-xl font-bold italic">{Bio.fname}</p>
-            <div className="z-[1] " onClick={handleClick}>
+            <div className="z-[12] " onClick={handleClick}>
               <FaBars />
             </div>
           </div>
@@ -171,7 +171,7 @@ function Main() {
               className="p-[30px] text-xl cursor-pointer font-extrabold"
               onClick={handleClick}
             >
-              <IoMdClose />
+              < IoMdClose />
             </div>
             <ul
               className="flex flex-col gap-6 justify-center items-center"
