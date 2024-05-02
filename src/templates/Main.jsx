@@ -37,7 +37,7 @@ function Main() {
               {Bio.name}
             </div>
 
-            <p className="">NNNNNNN</p>
+            <p className="">{Bio.fname}</p>
 
             <p>{Bio.lname}</p>
           </div>
@@ -116,6 +116,7 @@ function Main() {
             </Link>
             <Link
               activeClass="active"
+              activeStyle={{ color:'#5754a8' }}
               to="contact"
               spy={true}
               smooth={true}
@@ -135,9 +136,9 @@ function Main() {
           </nav>
         </div>
 
-        <div className="flex gap-[10px] flex-col justify-center items-center text-blue-950 ">
+        <div className="flex gap-[20px] flex-col justify-center items-center text-blue-950 ">
           <MediaLinnks />
-          <div className=" text-base font-medium">
+          <div className=" pb-[20px] text-base font-medium">
             Copyright © 2024 <br /> {Bio.name}
             <br /> All rights reserved.
           </div>
@@ -218,7 +219,7 @@ function Main() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer hover:hover:text-blue-700"
+                  className="cursor-pointer active:text-blue-700 hover:hover:text-blue-700"
                   onClick={handleClick}
                 >
                   Contact
@@ -226,6 +227,7 @@ function Main() {
               </li>
               <MediaLinnks />
             </ul>
+            
           </div>
         </div>
       </div>
@@ -236,6 +238,7 @@ function Main() {
       <WorkExp />
       <Works />
       <MainContact />
+      <p className="flex justify-center text-xs text-blue-950 lg:hidden "> Copyright © 2024  {Bio.name} All rights reserved.</p>
     </div>
   );
 }

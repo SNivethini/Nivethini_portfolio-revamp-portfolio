@@ -51,7 +51,7 @@ function Home() {
                 />
               </p>
               <motion.p
-                variants={fadeIn("right", 0.3)}
+                variants={fadeIn("right",0.3 )}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.7 }}
