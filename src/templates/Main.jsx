@@ -37,7 +37,7 @@ function Main() {
               {Bio.name}
             </div>
 
-            <p className="">NNNNNNN</p>
+            <p className="">{Bio.fname}</p>
 
             <p>{Bio.lname}</p>
           </div>
