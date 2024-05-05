@@ -202,6 +202,7 @@ function Main() {
               <li>
                 <Link
                   activeClass="active"
+                  
                   to="portfolio"
                   spy={true}
                   smooth={true}

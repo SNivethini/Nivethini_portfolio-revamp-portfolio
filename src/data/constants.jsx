@@ -21,7 +21,7 @@ export const Bio = {
                     " Identified 20+ problem areas. Architected and deployed advanced features in ReactJS, integrating with a JSON Server backend to streamline CRUD operations, leading to an improvement in user interaction and a reduction in manual data entry tasks.",
                     "1.5 + years of experience with front-end development tools such as Babel and npm and familiarity with version control systems such as Git."] ,
     github: "https://github.com/SNivethini",
-    Number: '9344889878',
+    Number:'7397668744',
     mail:'niveaarthi17@gmail.com',
     resume:
       "https://drive.google.com/file/d/1ZwsWMF3BU3HeJBEnZ2rsXEWzPb4aMjDJ/view?usp=sharing",
